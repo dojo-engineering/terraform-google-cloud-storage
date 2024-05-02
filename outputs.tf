@@ -14,25 +14,25 @@
  * limitations under the License.
  */
 
-output "bucket" {
-  description = "Bucket resource (for single use)."
-  value       = local.first_bucket
-}
+#output "bucket" {
+#  description = "Bucket resource (for single use)."
+#  value       = local.first_bucket
+#}
+#
+#output "name" {
+#  description = "Bucket name (for single use)."
+#  value       = local.first_bucket.name
+#}
+#
+#output "url" {
+#  description = "Bucket URL (for single use)."
+#  value       = local.first_bucket.url
+#}
 
-output "name" {
-  description = "Bucket name (for single use)."
-  value       = local.first_bucket.name
-}
-
-output "url" {
-  description = "Bucket URL (for single use)."
-  value       = local.first_bucket.url
-}
-
-output "buckets" {
-  description = "Bucket resources as list."
-  value       = local.buckets_list
-}
+#output "buckets" {
+#  description = "Bucket resources as list."
+#  value       = local.buckets_list
+#}
 
 output "buckets_map" {
   description = "Bucket resources by name."
@@ -53,15 +53,15 @@ output "urls" {
   }
 }
 
-output "names_list" {
-  description = "List of bucket names."
-  value       = local.buckets_list[*].name
-}
+#output "names_list" {
+#  description = "List of bucket names."
+#  value       = local.buckets_list[*].name
+#}
 
-output "urls_list" {
-  description = "List of bucket URLs."
-  value       = local.buckets_list[*].url
-}
+#output "urls_list" {
+#  description = "List of bucket URLs."
+#  value       = local.buckets_list[*].url
+#}
 
 output "hmac_keys" {
   description = "List of HMAC keys."
